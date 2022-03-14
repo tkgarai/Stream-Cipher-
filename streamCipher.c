@@ -60,5 +60,7 @@ void main()
         ch = getc(msg);
         fprintf(cpr, "%d", (ch - 48) ^ keybit);//since 0 and 1 has ascii value 48 and 49 respectively
     }
-    
+    fclose(cpr);
+    fclose(key);
+    fclose(msg);
 }
